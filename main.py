@@ -79,7 +79,7 @@ window.config(padx=20, pady=20, bg=BACKGROUND_COLOR)
 
 # -------------------- canvas for text sample ---------------------- #
 canvas = Canvas(width=600, height=340, bg=BACKGROUND_COLOR, highlightthickness=0)
-background_img = Image.open("./img/background.jpg")
+background_img = Image.open("background.jpg")
 background_img.thumbnail((600, 340), resample=3, reducing_gap=2.0)
 show_img = ImageTk.PhotoImage(background_img)
 canvas.create_image(300, 170, image=show_img)
